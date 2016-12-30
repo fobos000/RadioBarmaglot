@@ -11,15 +11,15 @@ Fabric: Copyright 2015 Twitter, Inc. All Rights Reserved. Use of this software i
 
 ## Firebase
 
-Copyright 2016 Google Inc.
+Copyright 2016 Google
 
 ## FirebaseAnalytics
 
-Copyright 2016 Google Inc.
+Copyright 2016 Google
 
 ## FirebaseInstanceID
 
-Copyright 2016 Google Inc.
+Copyright 2016 Google
 
 ## GoogleInterchangeUtilities
 
