@@ -7,14 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3642797F1DDF5F3F003A23FF /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3642797E1DDF5F3F003A23FF /* Analytics.swift */; };
+		365CF11A1DDF57EA00346012 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 365CF1191DDF57EA00346012 /* GoogleService-Info.plist */; };
+		365FA0051DE6F9610077FA69 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FA0041DE6F9610077FA69 /* BorderedButton.swift */; };
+		365FF9481DA7E27C007E1C75 /* RadioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365FF9471DA7E27C007E1C75 /* RadioService.swift */; };
+		3672EDE01DEA18C200EF69C5 /* Barmaglot-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672EDDE1DEA18C200EF69C5 /* Barmaglot-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3672EDE31DEA18C200EF69C5 /* BarmaglotIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3672EDDC1DEA18C200EF69C5 /* BarmaglotIOS.framework */; };
+		3672EDE41DEA18C200EF69C5 /* BarmaglotIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3672EDDC1DEA18C200EF69C5 /* BarmaglotIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3672EDE91DEA195100EF69C5 /* AlbumArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBE0F31DBCEAFE0017A607 /* AlbumArtworkLoader.swift */; };
+		504FF7521DBB66FD009BE1D9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504FF7511DBB66FD009BE1D9 /* MediaPlayer.framework */; };
+		504FF7541DBB6734009BE1D9 /* SystemPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FF7531DBB6734009BE1D9 /* SystemPlayer.swift */; };
+		504FF7561DBB915F009BE1D9 /* RadioPlayerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FF7551DBB915F009BE1D9 /* RadioPlayerInput.swift */; };
+		504FF7581DBB9200009BE1D9 /* RadioPlayerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FF7571DBB9200009BE1D9 /* RadioPlayerOutput.swift */; };
+		504FF75A1DBB920F009BE1D9 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FF7591DBB920F009BE1D9 /* RadioPlayer.swift */; };
+		504FF75C1DBBB8A1009BE1D9 /* TrackInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FF75B1DBBB8A1009BE1D9 /* TrackInfoParser.swift */; };
+		507D50781DAE1A9100A966E9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507D50771DAE1A9100A966E9 /* AppCoordinator.swift */; };
 		50C5E77E1DA43938006DAE0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E77D1DA43938006DAE0C /* AppDelegate.swift */; };
 		50C5E7801DA43938006DAE0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E77F1DA43938006DAE0C /* ViewController.swift */; };
 		50C5E7831DA43938006DAE0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7811DA43938006DAE0C /* Main.storyboard */; };
 		50C5E7851DA43938006DAE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7841DA43938006DAE0C /* Assets.xcassets */; };
 		50C5E7881DA43938006DAE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7861DA43938006DAE0C /* LaunchScreen.storyboard */; };
+		50D6B7371DAC03B400D366F5 /* A DAY WITHOUT SUN.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50D6B7361DAC03B400D366F5 /* A DAY WITHOUT SUN.otf */; };
+		50FBE0F41DBCEAFE0017A607 /* AlbumArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBE0F31DBCEAFE0017A607 /* AlbumArtworkLoader.swift */; };
+		FCA0B7CA713FF2085785CF1B /* Pods_RadioTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DD45E397A229808CF475D8 /* Pods_RadioTest.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3672EDE11DEA18C200EF69C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C5E7721DA43938006DAE0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3672EDDB1DEA18C200EF69C5;
+			remoteInfo = "Barmaglot-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3672EDE81DEA18C200EF69C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3672EDE41DEA18C200EF69C5 /* BarmaglotIOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3642797E1DDF5F3F003A23FF /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		365CF1191DDF57EA00346012 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		365FA0041DE6F9610077FA69 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		365FF9471DA7E27C007E1C75 /* RadioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioService.swift; sourceTree = "<group>"; };
+		3672EDD61DEA17C000EF69C5 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		3672EDDC1DEA18C200EF69C5 /* BarmaglotIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarmaglotIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3672EDDE1DEA18C200EF69C5 /* Barmaglot-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Barmaglot-iOS.h"; sourceTree = "<group>"; };
+		3672EDDF1DEA18C200EF69C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6A38FFCD3F81DC8ECC772F /* Pods-RadioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioTest/Pods-RadioTest.debug.xcconfig"; sourceTree = "<group>"; };
+		504FF7511DBB66FD009BE1D9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		504FF7531DBB6734009BE1D9 /* SystemPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemPlayer.swift; sourceTree = "<group>"; };
+		504FF7551DBB915F009BE1D9 /* RadioPlayerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayerInput.swift; sourceTree = "<group>"; };
+		504FF7571DBB9200009BE1D9 /* RadioPlayerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayerOutput.swift; sourceTree = "<group>"; };
+		504FF7591DBB920F009BE1D9 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		504FF75B1DBBB8A1009BE1D9 /* TrackInfoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackInfoParser.swift; sourceTree = "<group>"; };
+		507D50771DAE1A9100A966E9 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		50C5E77A1DA43938006DAE0C /* RadioTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C5E77D1DA43938006DAE0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C5E77F1DA43938006DAE0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,24 +80,60 @@
 		50C5E7841DA43938006DAE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C5E7871DA43938006DAE0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C5E7891DA43938006DAE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D6B7361DAC03B400D366F5 /* A DAY WITHOUT SUN.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A DAY WITHOUT SUN.otf"; path = "Assets/A DAY WITHOUT SUN.otf"; sourceTree = "<group>"; };
+		50FBE0F31DBCEAFE0017A607 /* AlbumArtworkLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumArtworkLoader.swift; sourceTree = "<group>"; };
+		87C79A2CD291E41ED220AC22 /* Pods-RadioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioTest/Pods-RadioTest.release.xcconfig"; sourceTree = "<group>"; };
+		F5DD45E397A229808CF475D8 /* Pods_RadioTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		50C5E7771DA43938006DAE0C /* Frameworks */ = {
+		3672EDD81DEA18C200EF69C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50C5E7771DA43938006DAE0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504FF7521DBB66FD009BE1D9 /* MediaPlayer.framework in Frameworks */,
+				FCA0B7CA713FF2085785CF1B /* Pods_RadioTest.framework in Frameworks */,
+				3672EDE31DEA18C200EF69C5 /* BarmaglotIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3672EDDD1DEA18C200EF69C5 /* Barmaglot-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3672EDDE1DEA18C200EF69C5 /* Barmaglot-iOS.h */,
+				3672EDDF1DEA18C200EF69C5 /* Info.plist */,
+			);
+			path = "Barmaglot-iOS";
+			sourceTree = "<group>";
+		};
+		504FF7501DBB66FD009BE1D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				504FF7511DBB66FD009BE1D9 /* MediaPlayer.framework */,
+				F5DD45E397A229808CF475D8 /* Pods_RadioTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50C5E7711DA43937006DAE0C = {
 			isa = PBXGroup;
 			children = (
+				3672EDD61DEA17C000EF69C5 /* Playground.playground */,
 				50C5E77C1DA43938006DAE0C /* RadioTest */,
+				3672EDDD1DEA18C200EF69C5 /* Barmaglot-iOS */,
 				50C5E77B1DA43938006DAE0C /* Products */,
+				504FF7501DBB66FD009BE1D9 /* Frameworks */,
+				E5C52390CC3002E68BF23F37 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				50C5E77A1DA43938006DAE0C /* RadioTest.app */,
+				3672EDDC1DEA18C200EF69C5 /* BarmaglotIOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,30 +149,86 @@
 		50C5E77C1DA43938006DAE0C /* RadioTest */ = {
 			isa = PBXGroup;
 			children = (
+				50D6B7361DAC03B400D366F5 /* A DAY WITHOUT SUN.otf */,
 				50C5E77D1DA43938006DAE0C /* AppDelegate.swift */,
 				50C5E77F1DA43938006DAE0C /* ViewController.swift */,
+				365FF9471DA7E27C007E1C75 /* RadioService.swift */,
 				50C5E7811DA43938006DAE0C /* Main.storyboard */,
 				50C5E7841DA43938006DAE0C /* Assets.xcassets */,
 				50C5E7861DA43938006DAE0C /* LaunchScreen.storyboard */,
 				50C5E7891DA43938006DAE0C /* Info.plist */,
+				365CF1191DDF57EA00346012 /* GoogleService-Info.plist */,
+				507D50771DAE1A9100A966E9 /* AppCoordinator.swift */,
+				504FF7531DBB6734009BE1D9 /* SystemPlayer.swift */,
+				50FBE0F31DBCEAFE0017A607 /* AlbumArtworkLoader.swift */,
+				504FF7551DBB915F009BE1D9 /* RadioPlayerInput.swift */,
+				504FF7571DBB9200009BE1D9 /* RadioPlayerOutput.swift */,
+				504FF7591DBB920F009BE1D9 /* RadioPlayer.swift */,
+				504FF75B1DBBB8A1009BE1D9 /* TrackInfoParser.swift */,
+				3642797E1DDF5F3F003A23FF /* Analytics.swift */,
+				365FA0041DE6F9610077FA69 /* BorderedButton.swift */,
 			);
 			path = RadioTest;
 			sourceTree = "<group>";
 		};
+		E5C52390CC3002E68BF23F37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A38FFCD3F81DC8ECC772F /* Pods-RadioTest.debug.xcconfig */,
+				87C79A2CD291E41ED220AC22 /* Pods-RadioTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3672EDD91DEA18C200EF69C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3672EDE01DEA18C200EF69C5 /* Barmaglot-iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		50C5E7791DA43938006DAE0C /* RadioTest */ = {
+		3672EDDB1DEA18C200EF69C5 /* Barmaglot-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50C5E78C1DA43938006DAE0C /* Build configuration list for PBXNativeTarget "RadioTest" */;
+			buildConfigurationList = 3672EDE51DEA18C200EF69C5 /* Build configuration list for PBXNativeTarget "Barmaglot-iOS" */;
 			buildPhases = (
-				50C5E7761DA43938006DAE0C /* Sources */,
-				50C5E7771DA43938006DAE0C /* Frameworks */,
-				50C5E7781DA43938006DAE0C /* Resources */,
+				3672EDD71DEA18C200EF69C5 /* Sources */,
+				3672EDD81DEA18C200EF69C5 /* Frameworks */,
+				3672EDD91DEA18C200EF69C5 /* Headers */,
+				3672EDDA1DEA18C200EF69C5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = "Barmaglot-iOS";
+			productName = "Barmaglot-iOS";
+			productReference = 3672EDDC1DEA18C200EF69C5 /* BarmaglotIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50C5E7791DA43938006DAE0C /* RadioTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C5E78C1DA43938006DAE0C /* Build configuration list for PBXNativeTarget "RadioTest" */;
+			buildPhases = (
+				105F82EEEDBEA806CDD02FA3 /* [CP] Check Pods Manifest.lock */,
+				50C5E7761DA43938006DAE0C /* Sources */,
+				50C5E7771DA43938006DAE0C /* Frameworks */,
+				50C5E7781DA43938006DAE0C /* Resources */,
+				F5BC56AB948D6CAACC0917DE /* [CP] Embed Pods Frameworks */,
+				9616009F6F356D4E3718EAB7 /* [CP] Copy Pods Resources */,
+				50590DA61DE09D1F00EC7319 /* ShellScript */,
+				3672EDE81DEA18C200EF69C5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3672EDE21DEA18C200EF69C5 /* PBXTargetDependency */,
 			);
 			name = RadioTest;
 			productName = RadioTest;
@@ -91,11 +242,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ostap Horbach";
 				TargetAttributes = {
+					3672EDDB1DEA18C200EF69C5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 692292BBJ4;
+						ProvisioningStyle = Automatic;
+					};
 					50C5E7791DA43938006DAE0C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CM2Y94S8FE;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -113,16 +272,26 @@
 			projectRoot = "";
 			targets = (
 				50C5E7791DA43938006DAE0C /* RadioTest */,
+				3672EDDB1DEA18C200EF69C5 /* Barmaglot-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3672EDDA1DEA18C200EF69C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50C5E7781DA43938006DAE0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				50C5E7881DA43938006DAE0C /* LaunchScreen.storyboard in Resources */,
+				50D6B7371DAC03B400D366F5 /* A DAY WITHOUT SUN.otf in Resources */,
+				365CF11A1DDF57EA00346012 /* GoogleService-Info.plist in Resources */,
 				50C5E7851DA43938006DAE0C /* Assets.xcassets in Resources */,
 				50C5E7831DA43938006DAE0C /* Main.storyboard in Resources */,
 			);
@@ -130,17 +299,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		105F82EEEDBEA806CDD02FA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50590DA61DE09D1F00EC7319 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 4fbf69ed0e66d13a96fa66d3bac638526ce1dba6 d01a4a9b83e49f2fb7fbffa00f0b1495cb6c4ad715f5f8bc4a87360210a009d6";
+		};
+		9616009F6F356D4E3718EAB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioTest/Pods-RadioTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5BC56AB948D6CAACC0917DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioTest/Pods-RadioTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3672EDD71DEA18C200EF69C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3672EDE91DEA195100EF69C5 /* AlbumArtworkLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50C5E7761DA43938006DAE0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504FF75A1DBB920F009BE1D9 /* RadioPlayer.swift in Sources */,
+				507D50781DAE1A9100A966E9 /* AppCoordinator.swift in Sources */,
+				365FA0051DE6F9610077FA69 /* BorderedButton.swift in Sources */,
+				504FF7561DBB915F009BE1D9 /* RadioPlayerInput.swift in Sources */,
+				50FBE0F41DBCEAFE0017A607 /* AlbumArtworkLoader.swift in Sources */,
+				3642797F1DDF5F3F003A23FF /* Analytics.swift in Sources */,
+				504FF75C1DBBB8A1009BE1D9 /* TrackInfoParser.swift in Sources */,
+				504FF7581DBB9200009BE1D9 /* RadioPlayerOutput.swift in Sources */,
+				504FF7541DBB6734009BE1D9 /* SystemPlayer.swift in Sources */,
+				365FF9481DA7E27C007E1C75 /* RadioService.swift in Sources */,
 				50C5E7801DA43938006DAE0C /* ViewController.swift in Sources */,
 				50C5E77E1DA43938006DAE0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3672EDE21DEA18C200EF69C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3672EDDB1DEA18C200EF69C5 /* Barmaglot-iOS */;
+			targetProxy = 3672EDE11DEA18C200EF69C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50C5E7811DA43938006DAE0C /* Main.storyboard */ = {
@@ -162,6 +418,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3672EDE61DEA18C200EF69C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 692292BBJ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Barmaglot-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "phnx.Barmaglot-iOS";
+				PRODUCT_NAME = BarmaglotIOS;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3672EDE71DEA18C200EF69C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 692292BBJ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Barmaglot-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "phnx.Barmaglot-iOS";
+				PRODUCT_NAME = BarmaglotIOS;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		50C5E78A1DA43938006DAE0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -176,8 +483,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -222,8 +531,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -242,6 +553,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -249,29 +561,55 @@
 		};
 		50C5E78D1DA43938006DAE0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6A38FFCD3F81DC8ECC772F /* Pods-RadioTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CM2Y94S8FE;
 				INFOPLIST_FILE = RadioTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = phnx.RadioTest;
+				PRODUCT_BUNDLE_IDENTIFIER = phnx.Barmaglot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		50C5E78E1DA43938006DAE0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C79A2CD291E41ED220AC22 /* Pods-RadioTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CM2Y94S8FE;
 				INFOPLIST_FILE = RadioTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = phnx.RadioTest;
+				PRODUCT_BUNDLE_IDENTIFIER = phnx.Barmaglot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3672EDE51DEA18C200EF69C5 /* Build configuration list for PBXNativeTarget "Barmaglot-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3672EDE61DEA18C200EF69C5 /* Debug */,
+				3672EDE71DEA18C200EF69C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		50C5E7751DA43938006DAE0C /* Build configuration list for PBXProject "RadioTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -288,6 +626,7 @@
 				50C5E78E1DA43938006DAE0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

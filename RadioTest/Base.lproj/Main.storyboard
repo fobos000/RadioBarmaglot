@@ -1,39 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="A DAY WITHOUT SUN.otf">
+            <string>ADAYWITHOUTSUN</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RadioTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="RadioTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VG-Nc-4HO">
-                                <rect key="frame" x="262.5" y="285" width="75" height="30"/>
-                                <state key="normal" title="Play/Pause"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fKp-rY-Tb2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VG-Nc-4HO">
+                                <rect key="frame" x="157" y="311" width="100" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="Y7O-OD-daU"/>
+                                    <constraint firstAttribute="width" constant="100" id="vUg-yW-BhV"/>
+                                </constraints>
+                                <state key="normal" image="Play"/>
+                                <state key="selected" image="Pause"/>
                                 <connections>
                                     <action selector="togglePlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3A-Pr-ZWm"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Cf-lh-n5v" customClass="BorderedView" customModule="RadioTest" customModuleProvider="target">
+                                <rect key="frame" x="168.66666666666666" y="329.66666666666669" width="77" height="77"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-1J-ou9">
+                                        <rect key="frame" x="20" y="20" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mpR-1J-ou9" firstAttribute="centerY" secondItem="2Cf-lh-n5v" secondAttribute="centerY" id="Tkg-Gf-5wt"/>
+                                    <constraint firstItem="mpR-1J-ou9" firstAttribute="centerX" secondItem="2Cf-lh-n5v" secondAttribute="centerX" id="boH-I4-JJe"/>
+                                    <constraint firstAttribute="height" constant="77" id="rvS-t6-Rf4"/>
+                                    <constraint firstAttribute="width" constant="77" id="wZl-GK-p7h"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBJ-D2-Ri7" customClass="BorderedView" customModule="RadioTest" customModuleProvider="target">
+                                <rect key="frame" x="20.666666666666657" y="522" width="372.66666666666663" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9M-F1-EOE" customClass="MarqueeLabel">
+                                        <rect key="frame" x="-0.33333333333334281" y="10.666666666666629" width="373" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="ueK-Qi-0wR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ADAYWITHOUTSUN" family="A DAY WITHOUT SUN" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="B9M-F1-EOE" firstAttribute="leading" secondItem="WBJ-D2-Ri7" secondAttribute="leading" id="0wB-pK-L6b"/>
+                                    <constraint firstAttribute="trailing" secondItem="B9M-F1-EOE" secondAttribute="trailing" id="4zL-yO-Gur"/>
+                                    <constraint firstItem="B9M-F1-EOE" firstAttribute="centerY" secondItem="WBJ-D2-Ri7" secondAttribute="centerY" constant="4" id="N39-OJ-qtj"/>
+                                    <constraint firstAttribute="height" constant="60" id="oas-qN-W4A"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lLF-mM-gjI">
+                                <rect key="frame" x="138.66666666666669" y="677" width="137.00000000000006" height="39"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03c-iM-cad">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
+                                        <state key="normal" image="fb"/>
+                                        <connections>
+                                            <action selector="facebookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10w-zo-0AM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf2-Hn-MmL">
+                                        <rect key="frame" x="49" y="0.0" width="39" height="39"/>
+                                        <state key="normal" image="vk"/>
+                                        <connections>
+                                            <action selector="vkTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIU-gb-THH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSm-5N-R82">
+                                        <rect key="frame" x="98" y="0.0" width="39.000000000000028" height="39"/>
+                                        <state key="normal" image="mail"/>
+                                        <connections>
+                                            <action selector="mailTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftD-0P-IZf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barmaglot_text" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-FD-ZqN">
+                                <rect key="frame" x="63.666666666666657" y="66.333333333333343" width="286" height="110.00000000000003"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="u8b-FD-ZqN" firstAttribute="centerY" secondItem="fKp-rY-Tb2" secondAttribute="centerY" multiplier="0.33" id="B73-bZ-szF"/>
+                            <constraint firstItem="WBJ-D2-Ri7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E60-Xb-kxq"/>
+                            <constraint firstItem="fKp-rY-Tb2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GvG-bS-JmZ"/>
+                            <constraint firstItem="2Cf-lh-n5v" firstAttribute="centerY" secondItem="0VG-Nc-4HO" secondAttribute="centerY" id="NhY-iF-Hjp"/>
+                            <constraint firstItem="u8b-FD-ZqN" firstAttribute="centerX" secondItem="fKp-rY-Tb2" secondAttribute="centerX" id="OMd-lZ-IWx"/>
+                            <constraint firstAttribute="trailing" secondItem="fKp-rY-Tb2" secondAttribute="trailing" id="SZ8-Wq-Wre"/>
+                            <constraint firstItem="lLF-mM-gjI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UPt-wV-r6N"/>
+                            <constraint firstItem="WBJ-D2-Ri7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="VpU-Mx-eHz"/>
+                            <constraint firstItem="fKp-rY-Tb2" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Ysj-nZ-MyD"/>
                             <constraint firstItem="0VG-Nc-4HO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ag2-7W-uhR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lLF-mM-gjI" secondAttribute="bottom" constant="20" id="c2L-Tx-SFG"/>
                             <constraint firstItem="0VG-Nc-4HO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eed-lm-Tab"/>
+                            <constraint firstItem="2Cf-lh-n5v" firstAttribute="centerX" secondItem="0VG-Nc-4HO" secondAttribute="centerX" id="ftj-1N-FbR"/>
+                            <constraint firstItem="fKp-rY-Tb2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="jNk-iT-6W9"/>
+                            <constraint firstItem="WBJ-D2-Ri7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="sXX-JZ-xnm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="mpR-1J-ou9" id="1rZ-Zv-b4d"/>
+                        <outlet property="activityIndicatorContainer" destination="2Cf-lh-n5v" id="Ohq-B8-OWj"/>
+                        <outlet property="playPauseButton" destination="0VG-Nc-4HO" id="MGI-n6-ROq"/>
+                        <outlet property="trackInfoBackgroundView" destination="WBJ-D2-Ri7" id="JOT-fG-rXW"/>
+                        <outlet property="trackInfoLabel" destination="B9M-F1-EOE" id="F6P-1R-qHh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background_vertical" width="414" height="736"/>
+        <image name="Barmaglot_text" width="286" height="110"/>
+        <image name="Pause" width="82" height="114"/>
+        <image name="Play" width="100" height="114"/>
+        <image name="fb" width="39" height="39"/>
+        <image name="mail" width="39" height="39"/>
+        <image name="vk" width="39" height="39"/>
+    </resources>
 </document>
