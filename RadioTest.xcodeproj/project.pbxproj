@@ -15,6 +15,8 @@
 		3672EDE31DEA18C200EF69C5 /* BarmaglotIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3672EDDC1DEA18C200EF69C5 /* BarmaglotIOS.framework */; };
 		3672EDE41DEA18C200EF69C5 /* BarmaglotIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3672EDDC1DEA18C200EF69C5 /* BarmaglotIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3672EDE91DEA195100EF69C5 /* AlbumArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBE0F31DBCEAFE0017A607 /* AlbumArtworkLoader.swift */; };
+		5046ABE51E29694C00463511 /* AngleGradientBorderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046ABE31E29694C00463511 /* AngleGradientBorderLayer.swift */; };
+		5046ABE61E29694C00463511 /* AngleGradientBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5046ABE41E29694C00463511 /* AngleGradientBorderView.swift */; };
 		504FF7521DBB66FD009BE1D9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504FF7511DBB66FD009BE1D9 /* MediaPlayer.framework */; };
 		504FF7541DBB6734009BE1D9 /* SystemPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FF7531DBB6734009BE1D9 /* SystemPlayer.swift */; };
 		504FF7561DBB915F009BE1D9 /* RadioPlayerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504FF7551DBB915F009BE1D9 /* RadioPlayerInput.swift */; };
@@ -27,8 +29,6 @@
 		50C5E7831DA43938006DAE0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7811DA43938006DAE0C /* Main.storyboard */; };
 		50C5E7851DA43938006DAE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7841DA43938006DAE0C /* Assets.xcassets */; };
 		50C5E7881DA43938006DAE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7861DA43938006DAE0C /* LaunchScreen.storyboard */; };
-		50C6F28B1E1E81AD00469A7C /* AngleGradientBorderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F2861E1E81AD00469A7C /* AngleGradientBorderLayer.swift */; };
-		50C6F28C1E1E81AD00469A7C /* AngleGradientBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F2871E1E81AD00469A7C /* AngleGradientBorderView.swift */; };
 		50C6F29D1E1E825F00469A7C /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F29C1E1E825F00469A7C /* AngleGradientLayer.m */; };
 		50C6F29F1E1E827A00469A7C /* RadioTest-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C6F29E1E1E827A00469A7C /* RadioTest-Bridging-Header.h */; };
 		50C6F2A21E1FC15A00469A7C /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F2A11E1FC15A00469A7C /* SpinnerView.swift */; };
@@ -71,6 +71,8 @@
 		3672EDDE1DEA18C200EF69C5 /* Barmaglot-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Barmaglot-iOS.h"; sourceTree = "<group>"; };
 		3672EDDF1DEA18C200EF69C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D6A38FFCD3F81DC8ECC772F /* Pods-RadioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioTest/Pods-RadioTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5046ABE31E29694C00463511 /* AngleGradientBorderLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AngleGradientBorderLayer.swift; path = ../../../../../Desktop/projects/RadioBarmaglot/RadioTest/AngleGradientBorderLayer.swift; sourceTree = "<group>"; };
+		5046ABE41E29694C00463511 /* AngleGradientBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AngleGradientBorderView.swift; path = ../../../../../Desktop/projects/RadioBarmaglot/RadioTest/AngleGradientBorderView.swift; sourceTree = "<group>"; };
 		504FF7511DBB66FD009BE1D9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		504FF7531DBB6734009BE1D9 /* SystemPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemPlayer.swift; sourceTree = "<group>"; };
 		504FF7551DBB915F009BE1D9 /* RadioPlayerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayerInput.swift; sourceTree = "<group>"; };
@@ -85,8 +87,6 @@
 		50C5E7841DA43938006DAE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C5E7871DA43938006DAE0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C5E7891DA43938006DAE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50C6F2861E1E81AD00469A7C /* AngleGradientBorderLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderLayer.swift; sourceTree = "<group>"; };
-		50C6F2871E1E81AD00469A7C /* AngleGradientBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderView.swift; sourceTree = "<group>"; };
 		50C6F29B1E1E825F00469A7C /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
 		50C6F29C1E1E825F00469A7C /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
 		50C6F29E1E1E827A00469A7C /* RadioTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RadioTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 		50C6F2881E1E81AD00469A7C /* AngleGradientBorder */ = {
 			isa = PBXGroup;
 			children = (
-				50C6F2861E1E81AD00469A7C /* AngleGradientBorderLayer.swift */,
-				50C6F2871E1E81AD00469A7C /* AngleGradientBorderView.swift */,
+				5046ABE31E29694C00463511 /* AngleGradientBorderLayer.swift */,
+				5046ABE41E29694C00463511 /* AngleGradientBorderView.swift */,
 			);
 			name = AngleGradientBorder;
 			path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/RadioTest/RadioTest";
@@ -414,12 +414,12 @@
 				504FF7561DBB915F009BE1D9 /* RadioPlayerInput.swift in Sources */,
 				50C6F29D1E1E825F00469A7C /* AngleGradientLayer.m in Sources */,
 				50FBE0F41DBCEAFE0017A607 /* AlbumArtworkLoader.swift in Sources */,
+				5046ABE61E29694C00463511 /* AngleGradientBorderView.swift in Sources */,
 				50C6F2A21E1FC15A00469A7C /* SpinnerView.swift in Sources */,
-				50C6F28B1E1E81AD00469A7C /* AngleGradientBorderLayer.swift in Sources */,
 				3642797F1DDF5F3F003A23FF /* Analytics.swift in Sources */,
 				504FF75C1DBBB8A1009BE1D9 /* TrackInfoParser.swift in Sources */,
-				50C6F28C1E1E81AD00469A7C /* AngleGradientBorderView.swift in Sources */,
 				504FF7581DBB9200009BE1D9 /* RadioPlayerOutput.swift in Sources */,
+				5046ABE51E29694C00463511 /* AngleGradientBorderLayer.swift in Sources */,
 				504FF7541DBB6734009BE1D9 /* SystemPlayer.swift in Sources */,
 				365FF9481DA7E27C007E1C75 /* RadioService.swift in Sources */,
 				50C5E7801DA43938006DAE0C /* ViewController.swift in Sources */,
