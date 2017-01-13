@@ -27,6 +27,11 @@
 		50C5E7831DA43938006DAE0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7811DA43938006DAE0C /* Main.storyboard */; };
 		50C5E7851DA43938006DAE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7841DA43938006DAE0C /* Assets.xcassets */; };
 		50C5E7881DA43938006DAE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E7861DA43938006DAE0C /* LaunchScreen.storyboard */; };
+		50C6F28B1E1E81AD00469A7C /* AngleGradientBorderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F2861E1E81AD00469A7C /* AngleGradientBorderLayer.swift */; };
+		50C6F28C1E1E81AD00469A7C /* AngleGradientBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F2871E1E81AD00469A7C /* AngleGradientBorderView.swift */; };
+		50C6F29D1E1E825F00469A7C /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F29C1E1E825F00469A7C /* AngleGradientLayer.m */; };
+		50C6F29F1E1E827A00469A7C /* RadioTest-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C6F29E1E1E827A00469A7C /* RadioTest-Bridging-Header.h */; };
+		50C6F2A21E1FC15A00469A7C /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6F2A11E1FC15A00469A7C /* SpinnerView.swift */; };
 		50D6B7371DAC03B400D366F5 /* A DAY WITHOUT SUN.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50D6B7361DAC03B400D366F5 /* A DAY WITHOUT SUN.otf */; };
 		50FBE0F41DBCEAFE0017A607 /* AlbumArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBE0F31DBCEAFE0017A607 /* AlbumArtworkLoader.swift */; };
 		FCA0B7CA713FF2085785CF1B /* Pods_RadioTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DD45E397A229808CF475D8 /* Pods_RadioTest.framework */; };
@@ -80,6 +85,12 @@
 		50C5E7841DA43938006DAE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C5E7871DA43938006DAE0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C5E7891DA43938006DAE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C6F2861E1E81AD00469A7C /* AngleGradientBorderLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderLayer.swift; sourceTree = "<group>"; };
+		50C6F2871E1E81AD00469A7C /* AngleGradientBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderView.swift; sourceTree = "<group>"; };
+		50C6F29B1E1E825F00469A7C /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
+		50C6F29C1E1E825F00469A7C /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
+		50C6F29E1E1E827A00469A7C /* RadioTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RadioTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		50C6F2A11E1FC15A00469A7C /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		50D6B7361DAC03B400D366F5 /* A DAY WITHOUT SUN.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A DAY WITHOUT SUN.otf"; path = "Assets/A DAY WITHOUT SUN.otf"; sourceTree = "<group>"; };
 		50FBE0F31DBCEAFE0017A607 /* AlbumArtworkLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumArtworkLoader.swift; sourceTree = "<group>"; };
 		87C79A2CD291E41ED220AC22 /* Pods-RadioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioTest/Pods-RadioTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +160,9 @@
 		50C5E77C1DA43938006DAE0C /* RadioTest */ = {
 			isa = PBXGroup;
 			children = (
+				50C6F29E1E1E827A00469A7C /* RadioTest-Bridging-Header.h */,
+				50C6F2A01E1E82B600469A7C /* AngleGradientLayer */,
+				50C6F2881E1E81AD00469A7C /* AngleGradientBorder */,
 				50D6B7361DAC03B400D366F5 /* A DAY WITHOUT SUN.otf */,
 				50C5E77D1DA43938006DAE0C /* AppDelegate.swift */,
 				50C5E77F1DA43938006DAE0C /* ViewController.swift */,
@@ -167,8 +181,28 @@
 				504FF75B1DBBB8A1009BE1D9 /* TrackInfoParser.swift */,
 				3642797E1DDF5F3F003A23FF /* Analytics.swift */,
 				365FA0041DE6F9610077FA69 /* BorderedButton.swift */,
+				50C6F2A11E1FC15A00469A7C /* SpinnerView.swift */,
 			);
 			path = RadioTest;
+			sourceTree = "<group>";
+		};
+		50C6F2881E1E81AD00469A7C /* AngleGradientBorder */ = {
+			isa = PBXGroup;
+			children = (
+				50C6F2861E1E81AD00469A7C /* AngleGradientBorderLayer.swift */,
+				50C6F2871E1E81AD00469A7C /* AngleGradientBorderView.swift */,
+			);
+			name = AngleGradientBorder;
+			path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/RadioTest/RadioTest";
+			sourceTree = "<group>";
+		};
+		50C6F2A01E1E82B600469A7C /* AngleGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				50C6F29B1E1E825F00469A7C /* AngleGradientLayer.h */,
+				50C6F29C1E1E825F00469A7C /* AngleGradientLayer.m */,
+			);
+			name = AngleGradientLayer;
 			sourceTree = "<group>";
 		};
 		E5C52390CC3002E68BF23F37 /* Pods */ = {
@@ -188,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3672EDE01DEA18C200EF69C5 /* Barmaglot-iOS.h in Headers */,
+				50C6F29F1E1E827A00469A7C /* RadioTest-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +288,7 @@
 					50C5E7791DA43938006DAE0C = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = CM2Y94S8FE;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -377,9 +412,13 @@
 				507D50781DAE1A9100A966E9 /* AppCoordinator.swift in Sources */,
 				365FA0051DE6F9610077FA69 /* BorderedButton.swift in Sources */,
 				504FF7561DBB915F009BE1D9 /* RadioPlayerInput.swift in Sources */,
+				50C6F29D1E1E825F00469A7C /* AngleGradientLayer.m in Sources */,
 				50FBE0F41DBCEAFE0017A607 /* AlbumArtworkLoader.swift in Sources */,
+				50C6F2A21E1FC15A00469A7C /* SpinnerView.swift in Sources */,
+				50C6F28B1E1E81AD00469A7C /* AngleGradientBorderLayer.swift in Sources */,
 				3642797F1DDF5F3F003A23FF /* Analytics.swift in Sources */,
 				504FF75C1DBBB8A1009BE1D9 /* TrackInfoParser.swift in Sources */,
+				50C6F28C1E1E81AD00469A7C /* AngleGradientBorderView.swift in Sources */,
 				504FF7581DBB9200009BE1D9 /* RadioPlayerOutput.swift in Sources */,
 				504FF7541DBB6734009BE1D9 /* SystemPlayer.swift in Sources */,
 				365FF9481DA7E27C007E1C75 /* RadioService.swift in Sources */,
@@ -565,6 +604,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = CM2Y94S8FE;
@@ -575,6 +615,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RadioTest/RadioTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -585,6 +627,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = CM2Y94S8FE;
 				INFOPLIST_FILE = RadioTest/Info.plist;
@@ -594,6 +637,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RadioTest/RadioTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -35,14 +35,18 @@ class ViewController: UIViewController, RadioViewInput {
     @IBOutlet weak var trackInfoLabel: UILabel!
     @IBOutlet weak var trackInfoBackgroundView: BorderedView!
     @IBOutlet weak var playPauseButton: UIButton!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var activityIndicatorContainer: BorderedView!
+    @IBOutlet weak var activityIndicatorContainer: SpinnerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        activityIndicator.transform = CGAffineTransform.identity.scaledBy(x: 2.5, y: 2.5)
         playPauseButton.setImage(#imageLiteral(resourceName: "Pause"), for: [.highlighted, .selected])
+        
+        let spinnerGradient: [AnyObject] = [
+            UIColor.white.cgColor,
+            UIColor(white: 1.0, alpha: 0.1)
+        ]
+        activityIndicatorContainer.setupGradientLayer(borderColors: spinnerGradient, borderWidth: 15)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,7 +64,6 @@ class ViewController: UIViewController, RadioViewInput {
     @IBAction func togglePlayer(_ sender: AnyObject) {
         animateButton {
             print("is selected: \(self.playPauseButton.isSelected)")
-//            self.playPauseButton.isSelected = !self.playPauseButton.isSelected
             
             if self.playPauseButton.isSelected {
                 self.output?.tappedPause()
@@ -99,24 +102,24 @@ class ViewController: UIViewController, RadioViewInput {
     
     func displayLoading() {
         activityIndicatorContainer.isHidden = false
-        activityIndicator.startAnimating()
+        activityIndicatorContainer.startAnimating()
         playPauseButton.isHidden = true
     }
     
     func hideLoading() {
         activityIndicatorContainer.isHidden = true
-        activityIndicator.stopAnimating()
+        activityIndicatorContainer.stopAnimating()
         playPauseButton.isHidden = false
     }
     
     func displayActivityIndicator() {
         activityIndicatorContainer.isHidden = false
-        activityIndicator.startAnimating()
+        activityIndicatorContainer.startAnimating()
     }
     
     func hideActivityIndicator() {
         activityIndicatorContainer.isHidden = true
-        activityIndicator.stopAnimating()
+        activityIndicatorContainer.stopAnimating()
     }
     
     override func remoteControlReceived(with receivedEvent: UIEvent?) {

@@ -53,8 +53,7 @@ class RadioPlayer: NSObject, AVRadioPlayer {
                         var intValue: UInt = 0
                         (interruptionOption as! NSValue).getValue(&intValue)
                         if AVAudioSessionInterruptionOptions(rawValue: intValue) == AVAudioSessionInterruptionOptions.shouldResume {
-                            self.player.play()
-                            self.output?.didStartLoading()
+                            self.play()
                         }
                     }
                 }
@@ -127,11 +126,6 @@ class RadioPlayer: NSObject, AVRadioPlayer {
     }
     
     func play() {
-        if let currentItem = player.currentItem {
-            currentItem.removeObserver(self, forKeyPath: "timedMetadata")
-            currentItem.removeObserver(self, forKeyPath: "playbackBufferEmpty")
-            currentItem.removeObserver(self, forKeyPath: "playbackLikelyToKeepUp")
-        }
         let newItem = AVPlayerItem(url: playerURL)
         configure(playerItem: newItem)
         player.replaceCurrentItem(with: newItem)    
@@ -142,6 +136,11 @@ class RadioPlayer: NSObject, AVRadioPlayer {
     func stop() {
         player.pause()
         output?.didStop()
+        if let currentItem = player.currentItem {
+            currentItem.removeObserver(self, forKeyPath: "timedMetadata")
+            currentItem.removeObserver(self, forKeyPath: "playbackBufferEmpty")
+            currentItem.removeObserver(self, forKeyPath: "playbackLikelyToKeepUp")
+        }
     }
     
     func configureWith(view: UIView) {
