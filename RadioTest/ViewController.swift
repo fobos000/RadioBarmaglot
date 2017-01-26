@@ -132,6 +132,8 @@ class ViewController: UIViewController, RadioViewInput {
                 togglePlayer(self)
             case .remoteControlPause:
                 togglePlayer(self)
+            case .remoteControlTogglePlayPause:
+                togglePlayer(self)
             default:
                 break
             }
