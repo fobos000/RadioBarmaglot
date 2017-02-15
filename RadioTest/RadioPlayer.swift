@@ -54,6 +54,7 @@ class RadioPlayer: NSObject, AVRadioPlayer {
                         (interruptionOption as! NSValue).getValue(&intValue)
                         if AVAudioSessionInterruptionOptions(rawValue: intValue) == AVAudioSessionInterruptionOptions.shouldResume {
                             self.play()
+                            self.output?.didStart()
                         }
                     }
                 }
