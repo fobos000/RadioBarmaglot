@@ -286,7 +286,7 @@
 					};
 					50C5E7791DA43938006DAE0C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = CM2Y94S8FE;
+						DevelopmentTeam = KY38SK8AD3;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -606,11 +606,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = CM2Y94S8FE;
+				DEVELOPMENT_TEAM = KY38SK8AD3;
 				INFOPLIST_FILE = RadioTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = phnx.Barmaglot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phnx.Barmaglot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -628,11 +628,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CM2Y94S8FE;
+				DEVELOPMENT_TEAM = KY38SK8AD3;
 				INFOPLIST_FILE = RadioTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = phnx.Barmaglot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phnx.Barmaglot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
